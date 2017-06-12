@@ -1,0 +1,59 @@
+.feedback
+	height: auto
+	padding-top: 200px
+
+	&__slide
+		text-align: center
+
+	& .owl-item
+		float: left
+		margin: 0
+	& .owl-stage
+		position: relative
+	& .owl-stage-outer
+		overflow: hidden
+
+
+	& .owl-dots
+		position: absolute
+		top: -90%
+		left: 35px
+		width: 90%
+		margin: 0 auto
+		text-align: center
+		display: flex
+		justify-content: center
+		&:hover
+			cursor: pointer
+	& .owl-dot:nth-child(2)
+		background-image: url("http://lorempixel.com/445/300/cats/3")
+	& .owl-dot:nth-child(3)
+		background-image: url("http://lorempixel.com/445/300/cats/4")
+	& .owl-dot
+		float: left
+		display: inline-block
+		width: 110px
+		height: 110px
+		transition: all .3s ease
+		cursor: pointer
+		background-color: pink
+		background-image: url("http://lorempixel.com/445/300/cats/1")
+		background-size: cover
+		background-position: bottom center
+		z-index: 2
+		margin: 0 10px
+		transform: scale(.7272727272727273)
+		transform-origin: bottom
+		opacity: .7
+
+
+		&:hover
+			opacity: 1
+
+		&.active
+			transform: scale(1)
+			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2)
+			
+
+[disabled], .disabled
+	display: none

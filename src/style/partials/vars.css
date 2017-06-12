@@ -1,0 +1,14 @@
+:root {
+	--bg-color: #fff;
+	--sb-color: #f3f3f3;
+
+	--title-color-main: #333;
+	--text-color-accent: #3971ff;
+	--text-color-second: #4c4c4c;
+	
+	--second-font: Roboto;
+	--accent-font: "Exo 2";
+}
+a {
+	overflow: hidden;
+	}

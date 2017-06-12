@@ -1,0 +1,73 @@
+.skills
+	height: auto
+	background-color: var(--sb-color)
+	padding-bottom: 45px
+
+	&__list
+		// padding-bottom: 35px
+
+	&__item
+		// padding-left: 0
+		position: relative
+
+
+		&:hover &__range::after
+			opacity: 1
+
+		&:nth-child(1) 
+			&:hover::before
+				width: 90%
+		&:nth-child(2) 
+			&:hover::before
+				width: 80%
+		&:nth-child(3) 
+			&:hover::before
+				width: 87%
+		&:nth-child(4) 
+			&:hover::before
+				width: 91%
+		&:nth-child(5) 
+			&:hover::before
+				width: 88%
+		&:nth-child(6) 
+			&:hover::before
+				width: 100%
+
+
+		&::after
+		
+			content: ''
+			width: 100%
+			height: 5px
+			display: block
+			background-color: var(--text-color-accent)
+			opacity: .4
+
+		&::before
+			position: absolute
+			bottom: 0
+			left: 0
+			// transform: translateX(15px)
+			content: ''
+			width: 0
+			height: 5px
+			display: inline-block
+			background-color: var(--text-color-accent)
+			transition: width .3s ease
+
+
+		&__text
+			margin:
+				bottom: 15px
+		&__name
+			text-transform: uppercase
+
+		&__range
+			position: absolute
+			right: 15px
+
+			line-height: none
+			&::after
+				content: attr(data-range) '%'
+				opacity: 0
+				transition: opacity .3s ease
